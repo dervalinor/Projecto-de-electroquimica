@@ -3,7 +3,7 @@
 # source env/bin/activate
 # pip install neuron
 # source env/bin/activate
-# python3
+# python3.
 # Tambien instalar este paquete: pip3 install matplotlib
 
 from neuron import h, gui         # Importa NEURON y su interfaz gráfica (opcional)
