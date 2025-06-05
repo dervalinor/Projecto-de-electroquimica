@@ -1,16 +1,16 @@
 #Para instalar los paquetes necesarios debemos crear un entorno para
 #poder instalar los paquetes de python necesarios
 
-#python3 -m venv venv
-#source venv/bin/activate
+#python3 -m venv venv  --> Crear un entorno virtual
+#source venv/bin/activate  --> activar el entorno virtual
 
 # Simulación de la oxidación de dopamina bajo estrés oxidativo
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Parámetros de simulación
+
 T = 3600       # tiempo total en segundos (1 hora)
-dt = 0.1       # paso de integración en segundos
+dt = 0.1 # paso de Integración en segundos
 n_pas = int(T/dt)
 
 # Variables de estado iniciales: concentraciones
@@ -79,5 +79,9 @@ plt.ylabel('Concentración (u.a.)')
 plt.legend()
 plt.title('Dinámica de [DA] y [H$_2$O$_2$] con variabilidad estocástica')
 plt.tight_layout()
-plt.show()
 
+#Guardar resultado en una imagen png
+image_path = "/home/udenar/Projecto-de-electroquimica/3_oxidacion_dapomina/oxidacion_dopamina.png"
+plt.savefig(image_path)
+plt.close()
+image_path
