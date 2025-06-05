@@ -1,6 +1,49 @@
-*
-!.gitignore
-!*.py
-!*/
-!**/*.py
+# Ignorar entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar notebooks y datos
+*.ipynb
+*.csv
+*.tsv
+*.xlsx
+*.h5
+*.pkl
+*.npz
+*.npy
+
+# Ignorar archivos de log o debug
+*.log
+*.out
+
+# Ignorar configuraciones de editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de salida o tests
+output/
+outputs/
+results/
+tests/
+tmp/
+temp/
+
+# Ignorar archivos ocultos de configuración
+*.env
+.env.*
 
