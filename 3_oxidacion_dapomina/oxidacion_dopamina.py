@@ -1,3 +1,9 @@
+#Para instalar los paquetes necesarios debemos crear un entorno para
+#poder instalar los paquetes de python necesarios
+
+#python3 -m venv venv
+#source venv/bin/activate
+
 # Simulación de la oxidación de dopamina bajo estrés oxidativo
 import numpy as np
 import matplotlib.pyplot as plt
